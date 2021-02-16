@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if title %}
+    <title>{{ title }} | Slyko</title>
+    {% else %}
+    <title>Welcome to Slyko blog</title>
+    {% endif %}
+</head>
+
+<body>
+    <div>Slyko blog: <a href="index.html">Home</a></div>
+    <hr>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
